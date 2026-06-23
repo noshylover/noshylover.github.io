@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZRQRE93CG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); 
+
+  gtag('config', 'G-GZRQRE93CG');
+</script>
+
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69837fe515cc36c610e95ca4&product=sop' async='async'></script>
+       
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="image" property="og:image" content="{{ site.logo }}">
+      <meta name="description" property="og:description" content="{{ site.description }}">
+      <meta name="title" property="og:title" content="{{ site.title }}">
+      <meta name="author" content="{{ site.author_name }}">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://noshylover.github.io">
+      {{ page.meta }}
+      <title>{{ site.title }} {{ page.title }}</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon }}">
+      <script src="https://kit.fontawesome.com/56182aba27.js" crossorigin="anonymous"></script>
+	
+	   <link rel="stylesheet" href="/blog/uikit/css/uikit.min.css" />
+      <link href="/index2.css" rel="stylesheet">
+	
+      <script src="/blog/uikit/js/uikit.min.js"></script>
+      <script src="/blog/uikit/js/uikit-icons.min.js"></script>
+	
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+   </head>
+   <body id="thePage">
+	   <div id="top"></div>
+
+       {% include playlist.html %}
+
+	   {% include flag.html %}
+   
+      <div class="canvas">
+         <div class="links"> <!--uk-scrollspy="cls:uk-animation-fade; target: .link; delay:300;"-->
+            <a href="/" style="width: 150px;display: block;margin-left: auto;margin-right: auto;border-radius: 100%;">
+               <img src="{{ site.logo }}" class="logo">
+            </a>
+            <a href="/" style="display: block;margin: 0 auto;">
+               <h1 style="text-transform:uppercase;">no shy lover</h1> 
+            </a>
+            <p style="text-align:center;line-height: 135%;letter-spacing: 0.25em;text-transform: uppercase;">Lover of many things<!--<br><a id="startParty">(PHOTOSENSITIVITY WARNING) START THE PARTY!</a><a id="stopParty" class="hidden">STOP THE PARTY!</a>--></p>
+            <p id="less2" class="hidden" style="text-align:center;line-height: 135%;letter-spacing: 0.25em;text-transform: uppercase;margin-top:1rem;">
+               <a href="#top">Hide</a>
+            </p>
+            <div id="bio" class="hidden"> <!--uk-scrollspy="cls:uk-animation-slide-top;"-->
+               {{content}}
+            </div>            
+            <p id="less" class="hidden" style="text-align:center;line-height: 135%;letter-spacing: 0.25em;text-transform: uppercase;margin-top:1rem;">
+               <a href="#top">Hide</a>
+            </p>
+            <p id="more" style="text-align:center;line-height: 135%;letter-spacing: 0.25em;text-transform: uppercase;">
+               <a href="#">Learn more</a>
+            </p>
+            {% include links.html %}
+
+            <!--{% include blog.html %}-->
+         </div>
+         <div style="clear:both;"></div> {% include footer.html %}
+      </div>
+      <script src="/showAboutMe.js"></script>
+      <script src="/mode-switcher.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
