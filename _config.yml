@@ -1,0 +1,53 @@
+# Site Info
+title:              "No Shy Lover's Links"
+description:        "Here are all my links."
+
+# Author Info
+author_name:        noshylover
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /projects/:title # Post permalink
+timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+language:           en-US
+favicon:            /sitewideimg-rainbow.png
+logo:               /sitewideimg-rainbow.png
+
+# Pagination Settings
+paginate_path: "/pg-:num/"
+paginate: 5
+
+# Site Build
+highlighter: rouge
+markdown: kramdown
+gems:
+  - jekyll-sitemap
+  - tzinfo
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:          "posts"
+    values:
+      layout:        "post"
+
+
+
+
+
+
+
+
