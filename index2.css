@@ -280,6 +280,7 @@ text-decoration:none!important;
 #bio img.bio-photo {
 	margin-bottom:20px!important;
 	border-bottom:2px solid var(--pink-color);
+	border-top:2px solid var(--pink-color);?
 }
 
 #bio a {
